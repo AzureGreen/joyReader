@@ -1,0 +1,22 @@
+
+@import './assets/style/index.scss';
+@import './pages/login/index.scss';
+
+/* components */
+@import './pages/components/tabbar/index.scss';
+@import './pages/components/back-btn/index.scss';
+/* home */
+@import './pages/contacts/index.scss';
+@import './pages/contacts/add-friend/index.scss';
+@import './pages/contacts/new-friend/index.scss';
+@import './pages/me/index.scss';
+@import './pages/me/head-pic/index.scss';
+@import './pages/me/settings/index.scss';
+@import './pages/chat/index.scss';
+@import './pages/book/book-room/index.scss';
+@import './pages/book/book-detail/index.scss';
+@import './pages/book/add-book/index.scss';
+@import './pages/book/borrow/index.scss';
+@import './pages/chat/chat-room/index.scss';
+@import './pages/chat/normal-dlg/index.scss';
+@import './pages/chat/borrow-dlg/index.scss';

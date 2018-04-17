@@ -1,0 +1,59 @@
+$chatBgColor: #eff1f3;
+
+.normal-dlg {
+    display: flex;
+    padding: .5rem 0;
+    background: $chatBgColor;
+
+    .headpic {
+        flex-basis: 20%;
+        text-align: center;
+        img {
+            width: 60%;
+            border-radius: 50%;
+        }
+    }
+    .dlg {
+        flex-basis: 80%;
+        .context {
+            position: relative;
+            max-width: 70%;
+            min-width: 5%;
+            padding: .4rem;
+            border-radius: .5rem;
+            background: #fff;
+            font-size: .75rem;
+            line-height: 1rem;
+        }
+    }
+}
+.dlg-left {
+    flex-direction: row;
+    .context {
+        float: left;
+        &::before {
+            position: absolute;
+            top: .5rem;
+            content: "";
+            right: 100%;
+            border-right: 0.4rem solid #fff;
+            border-top: 0.4rem solid transparent;
+            border-bottom: 0.4rem solid transparent;
+        }
+    }
+}
+.dlg-right {
+    flex-direction: row-reverse;
+    .context {
+        float: right;
+        &::before {
+            position: absolute;
+            top: .5rem;
+            content: "";
+            left: 100%;
+            border-left: 0.4rem solid #fff;
+            border-top: 0.4rem solid transparent;
+            border-bottom: 0.4rem solid transparent;
+        }
+    }
+}

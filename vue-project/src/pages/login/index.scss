@@ -1,0 +1,184 @@
+
+.login {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .title {
+        
+        text-align: center;
+
+        .login-title {
+            color: #bcbcbc;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        .login-pic {
+            width: 45%;
+            border: solid 2px #ddd;
+            border-radius: 50%;
+
+        }
+    }
+
+    .login-input-item, .login-submit {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 96%;
+        margin: 1rem 0;
+        padding: 0.2rem 0;
+    }
+
+    .login-input-item {
+        display: flex;
+        
+        color: #c8c8c8;
+        border: solid 2px #ddd;
+        border-radius: 0.25rem;
+    
+        .login-fa {
+            position: relative;
+            flex-basis: 10%;
+            margin: 0 auto;
+            display: inline-block;
+    
+            .fa {
+                // 为了图标居中
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    
+        .login-number, .login-passwd {
+            flex-basis: 90%;
+    
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                line-height: 1.5rem;
+
+                &::-webkit-input-placeholder {
+                    color: #ddd;
+                }
+            }
+    
+        }
+    }
+    
+    .login-submit {
+        display: block;
+        line-height: 1.5rem;
+        background-color: #27a096;
+        color: #f0f0f0;
+        border: solid 0.1rem #27a096;
+        border-radius: 0.25rem;
+        outline: none;
+    }
+
+    .forget-register {
+
+        color: #bbb;
+        .login-forget {
+
+        }
+
+        .login-register {
+            float: right;
+        }
+    }
+}
+
+
+.register, .forget {
+    
+    .title {
+        padding: 1rem 0;
+        background-color: #f7f7f7;
+        text-align: center;
+
+        .register-title {
+            margin: 0;
+            color: #27a096;
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+    }
+
+    .register-input-item, .register-submit {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        margin: 1rem 0;
+        padding: 0.2rem;
+    }
+
+    .register-input-item {
+        color: #c8c8c8;
+        border: solid 2px #ddd;
+        border-radius: 0.5rem;
+
+        .register-number, .register-passwd, .register-identify {
+            width: 100%;
+            display: inline-block;
+    
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+                line-height: 1.5rem;
+
+                &::-webkit-input-placeholder {
+                    color: #ddd;
+                }
+            }
+    
+        }
+    }
+
+    .register-identify-item {
+        border: none;
+        border-radius: none;
+
+        .register-identify {
+            width: 60%;
+            input {
+                display: inline-block;
+                width: 100%;
+                outline: #ddd;
+                border: solid 2px #ddd;
+                border-radius: 0.5rem;
+            }
+        }   
+        .register-identify-button {
+            float: right;
+            display: inline-block;
+            line-height: 1.5rem;
+            background-color: #fa6c62;
+            color: #f0f0f0;
+            border: solid 0.1rem #fa6c62;
+            border-radius: 0.5rem;
+        }
+    }
+    
+    .register-submit {
+        display: block;
+        line-height: 1.5rem;
+        background-color: #27a096;
+        color: #f0f0f0;
+        border: solid 0.1rem #27a096;
+        border-radius: 0.25rem;
+        outline: none;
+    }
+
+}
+
+
+

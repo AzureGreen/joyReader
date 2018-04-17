@@ -1,0 +1,118 @@
+$themeColor: #27a096;
+$bgColor: #f7f7f7;
+$fontColor: #a5a5a5;
+
+.add-friend {
+    
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 2.8rem;
+        background: $bgColor;
+        color: $themeColor;
+        box-shadow: 0 0 .1rem $fontColor;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container {
+        margin: 2.8rem 0;
+
+        .search {
+            display: flex;
+            padding: 0.5rem 0;
+            text-align: center;
+            color: $fontColor;
+            background: #eef1f5;
+            box-shadow: 0 0 .1rem $fontColor;
+
+            .search-fa {
+                flex-basis: 20%;
+                text-align: right;
+            }
+
+            .search-input {
+                flex-basis: 80%;
+                text-align: left;
+                input {
+                    width: 80%;
+                    padding-left: .5rem;
+                    outline: none;
+                    border: none;
+                    border-bottom: .07rem solid $themeColor;
+                    background: #eef1f5;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .search-result {
+
+        display: flex;
+        flex-direction: column;
+
+        .not-found {
+            padding: 1rem;
+            text-align: center;
+            color: $fontColor;
+        }
+
+        .found {
+            padding: 1rem 0;
+
+            .info {
+                display: flex;
+                padding: .6rem;
+                box-shadow: 0 0 .1rem $fontColor;
+
+                .img {
+                    flex-basis: 30%;
+                    text-align: center;
+                    img {
+                        width: 70%;
+                        border-radius: 50%;
+                    }
+                }
+    
+                .basic-info {
+                    flex-basis: 80%;
+
+                    .name {
+                        display: block;
+                    }
+                    .readerId {
+                        color: $fontColor;
+                    }
+                }
+
+            }
+            
+            .add {
+                width: 100%;
+                padding: 1.5rem 0;
+                text-align: center;
+                .add-btn {
+                    width: 80%;
+                    padding: .3rem 0;
+                    border: 0.05rem solid transparent;
+                    border-radius: 0.25rem;
+                    border-color: $themeColor;
+                    outline: none;
+                    background: $themeColor;
+                    color: #fff;
+                }
+            }
+            
+
+        }
+
+    }
+
+}

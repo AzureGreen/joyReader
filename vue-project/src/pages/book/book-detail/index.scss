@@ -1,0 +1,130 @@
+$themeColor: #27a096;
+$bgColor: #f7f7f7;
+$fontColor: #a5a5a5;
+$fontColor2: #5b5b5b;
+$rato: 1/3;
+
+.bookdetail {
+    position: absolute;
+    height: 100%;
+    background: #eff1f3;
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 2.8rem;
+        background: $bgColor;
+        color: $themeColor;
+        box-shadow: 0 0 .1rem $fontColor;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bookdetail-container {
+        margin-top: 2.8rem;
+        
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+
+            .img {
+                width: 50%;
+                margin: 1rem 0;
+                text-align: center;
+                img {
+                    width: 70%;
+                    box-shadow: .3rem .1rem .1rem $fontColor;
+                }
+            }
+            .detail-info {
+                width: 50%;
+                padding: 1rem 0;
+                line-height: 2;
+                span {
+                    display: block;
+                    font-size: .7rem;
+                    color: $fontColor2;
+                }
+
+            }
+            .introduction {
+                padding: 1rem;
+                span {
+                    color: $themeColor;
+                }
+                p {
+                    font-size: .7rem;
+                    color: $fontColor2;
+                }
+            }
+
+
+        }
+
+        // .hide {
+        //     display: none;
+        // }
+
+        .select-book {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 2.8rem;
+            margin: 0;
+            box-shadow: 0 0 .1rem $fontColor;
+            z-index: 100;
+
+            .info {
+                float: left;
+                width: 50%;
+                background: #fff;
+                line-height: 1.35;
+
+                span {
+                    display: block;
+                }
+
+                .name {
+                    padding-left: .2rem;
+                    color: $themeColor;
+                    font-size: .75rem;
+                }
+                .author, .publisher {
+                    padding-left: .5rem;
+                    color: $fontColor;
+                    font-size: .65rem;
+                }
+            }
+
+            .detail, .borrow {
+                float: left;
+                width: 25%;
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                line-height: 2.8rem;
+                font-size: .7rem;
+                font-weight: 300;
+                span {
+                    vertical-align: middle;
+                }
+            }
+
+            .detail {
+                background: $fontColor;
+            }
+
+            
+            .borrow {
+                background: $themeColor;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,108 @@
+$chatBgColor: #eff1f3;
+$themeColor: #27a096;
+$fontColor: #a5a5a5;
+
+.borrow-dlg {
+    display: flex;
+    padding: .5rem 0;
+    background: $chatBgColor;
+
+    .headpic {
+        flex-basis: 20%;
+        text-align: center;
+        img {
+            width: 60%;
+            border-radius: 50%;
+        }
+    }
+    .dlg {
+        flex-basis: 80%;
+        .context {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            max-width: 70%;
+            min-width: 68%;
+            border-radius: .5rem;
+            background: #fff;
+            font-size: .75rem;
+            line-height: 1rem;
+
+            .tips {
+                padding: .4rem;
+                span {
+                    display: block;
+                }
+
+                .time {
+                    font-size: .65rem;
+                    color: $fontColor;
+                }
+            }
+
+            .options {
+                display: flex;
+                height: 1.8rem;
+                border-bottom-right-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+                background: #ddd;
+                button {
+                    flex: 1;    // 等分
+                    padding: 0;
+                    text-align: center;
+                    color: #fff;
+                    background: $themeColor;
+                    border: 0.05rem solid transparent;
+                    outline: none;
+
+                    span {
+                        display: inline-block;
+                        margin-top: .9rem;
+                        transform: translateY(-50%);
+                    }
+                }
+                .left-option {
+                    border-right: 0.05rem solid #fff;
+                    border-radius: 0 0 0 .5rem;
+                }
+                .right-option {
+                    border-left: 0.05rem solid #fff;
+                    border-radius: 0 0 .5rem 0;
+                }
+
+                .ban {
+                    background: #ddd;
+                }
+            }
+        }
+    }
+}
+.dlg-left {
+    flex-direction: row;
+    .context {
+        &::before {
+            position: absolute;
+            top: .5rem;
+            content: "";
+            right: 100%;
+            border-right: 0.4rem solid #fff;
+            border-top: 0.4rem solid transparent;
+            border-bottom: 0.4rem solid transparent;
+        }
+    }
+}
+.dlg-right {
+    flex-direction: row-reverse;
+    .context {
+        float: right;
+        &::before {
+            position: absolute;
+            top: .5rem;
+            content: "";
+            left: 100%;
+            border-left: 0.4rem solid #fff;
+            border-top: 0.4rem solid transparent;
+            border-bottom: 0.4rem solid transparent;
+        }
+    }
+}

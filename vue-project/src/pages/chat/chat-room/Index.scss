@@ -1,0 +1,97 @@
+$themeColor: #27a096;
+$bgColor: #f7f7f7;
+$fontColor: #a5a5a5;
+$chatBgColor: #eff1f3;
+
+.chat-room {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $chatBgColor;
+    
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 2.8rem;
+        background: $bgColor;
+        color: $themeColor;
+        box-shadow: 0 0 .1rem $fontColor;
+        z-index: 10000;
+    }
+
+    .room-title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .room-container {
+        margin: 2.8rem 0;
+        width: 100%;
+        height: 100%;
+        overflow-Y: auto;
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .room-input {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 2.8rem;
+        border-top-color: #ddd;
+        background: $bgColor;
+        box-shadow: 0 0 .15rem $fontColor;
+        z-index: 10000;
+
+        .input-div {
+            flex-basis: 80%;
+            text-align: center;
+
+            .input-box {
+                width: 90%;
+                border-color: #ddd;
+            }
+        }
+
+        .btn-div {
+            flex-basis: 20%;
+            text-align: center;
+
+            .send-btn {
+                width: 90%;
+                border-color: $themeColor;
+                background: $themeColor;
+                color: #fff;
+
+                span {
+                    font-size: .7rem;
+                }
+            }
+        }
+
+        .input-box, .send-btn {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 1.5rem;
+            border: 0.05rem solid transparent;
+            border-radius: 0.2rem;
+            outline: none;
+        }
+
+        
+
+
+
+    }
+
+}

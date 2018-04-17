@@ -1,0 +1,116 @@
+$themeColor: #27a096;
+$bgColor: #f7f7f7;
+$fontColor: #a5a5a5;
+
+.me {
+    
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 2.8rem;
+        background: $bgColor;
+        color: $themeColor;
+        box-shadow: 0 0 .1rem $fontColor;
+        z-index: 10000;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .me-container {
+        margin: 2.8rem 0;
+
+        .info-background {
+            position: relative;
+            width: 100%;
+            height: 10rem;
+            text-align: center;
+            overflow: hidden;
+
+            .background {
+                width: 100%;
+                opacity:0.4;
+            }
+        }
+
+        .info {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+
+            label {
+                display: block;
+                width: 40%;
+                margin: 0 auto;
+                border-radius: 50%;
+                
+                #uploadfile {
+                    display: none;
+                }
+            }
+
+            a {
+                display: block;
+                margin: 0 auto;
+                width: 40%;
+            }
+
+            img {
+                // display: block;
+                width: 100%;
+                // margin: 0 auto;
+                border-radius: 50%;
+                border: .1rem solid #aaa;
+            }
+        }
+
+        .items {
+
+            width: 90%;
+            margin: 0 auto;
+            margin-top: .4rem;
+            border: .05rem solid #ddd;
+            border-radius: .5rem;
+
+            
+            .item {
+                position: relative;
+                height: 3rem;
+                width: 90%;
+                margin: 0 auto;
+                border-bottom: .05rem solid #ddd;
+
+                vertical-align: middle;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                img, span {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                img {
+                    position: relative;
+                    height: 50%;
+                    margin: 0 .5rem;
+                }
+
+                span {
+                    position: absolute;
+                }
+            }
+
+
+        }
+    }
+}
